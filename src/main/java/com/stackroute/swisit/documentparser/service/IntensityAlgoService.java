@@ -1,5 +1,10 @@
 package com.stackroute.swisit.documentparser.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import com.stackroute.swisit.documentparser.domain.ContentSchema;
+
 /**
  * Created by user on 30/6/17.
  */
