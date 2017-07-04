@@ -15,26 +15,27 @@ public class KeywordScannerServiceImpl implements KeywordScannerService {
 
     private ObjectMapperService objectMapperService;
 
-    public HashMap<String,String[]> scanDocument(Document document){
+    public HashMap<String, String> scanDocument(Document document){
 
-        HashMap<String,String[]> resultMap = new HashMap<>();
+        HashMap<String, String> resultMap = new HashMap<>();
         List<LinkedHashMap<String,String>> titleList = objectMapperService.objectMapping("./src/main/resources/common/intensity.json");
         List<String> tagList = new ArrayList<>();
         StringTokenizer stringTokenizer = null;
 
         for(int i=0;i<titleList.size();i++){ tagList.add(titleList.get(i).get("title")); }
         for(String tag:tagList){
-            String[] strings ={};
+            //String[] strings ={};
+        	String tagText = null;
             Elements elements = document.select(tag);
             for(Element element : elements){
-                String tagText = element.text();
-                stringTokenizer = new StringTokenizer(tagText,"[$&+,:;=?@#|'<>.^*()%!-]");
+                tagText = element.text();
+                /*stringTokenizer = new StringTokenizer(tagText,"[$&+,:;=?@#|'<>.^*()%!-]");
                 strings = null;
                 for(int i=0;stringTokenizer.hasMoreElements();i++){
                     strings[i] = stringTokenizer.nextElement().toString();
-                }
+                }*/
             }
-            resultMap.put(tag,strings);
+            resultMap.put(tag,tagText);
         }
         return resultMap;
     }

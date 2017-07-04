@@ -21,11 +21,13 @@ public class ObjectMapperServiceImpl implements ObjectMapperService {
         ObjectMapper objectMapper=new ObjectMapper();
         File file= new File(filePath);
         List<LinkedHashMap<String,String>> list = null;
-
         try {
             list = (List<LinkedHashMap<String, String>>) objectMapper.readValue(file, ArrayList.class);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        for(LinkedHashMap<String,String> linked : list){
+        	System.out.println(linked.toString());
         }
         return list;
     }

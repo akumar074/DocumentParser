@@ -1,11 +1,9 @@
 package com.stackroute.swisit.documentparser.service;
 
 import com.uttesh.exude.ExudeData;
+
 import com.uttesh.exude.exception.InvalidDataException;
 import org.springframework.stereotype.Service;
-
-import com.stackroute.swisit.documentparser.domain.CrawlerResult;
-import com.stackroute.swisit.documentparser.domain.WordChecker;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -17,53 +15,41 @@ import java.util.Map;
  * Created by user on 30/6/17.
  */
 @Service
-public class WordCheckerServiceImpl /*implements WordCheckerService*/{
+public class WordCheckerServiceImpl implements WordCheckerService{
 	public HashMap<String,List<String>> getWordCheckerByWord(HashMap<String,String> input){
-		//CrawlerResult crawlerResult=new CrawlerResult();
-
-		HashMap<String,List<String>> resultMap = new HashMap<>();
-
-		//String inputData=crawlerResult.getDocument();
-	String inputData = "This handy tool helps you create dummy text for all your layout needs. We are gradually adding new functionality and we welcome your suggestions and feedback. Please feel free to send us any additional dummy texts.";
-
+		
+		/*String inputData = "This handy tool helps you create dummy text for all your layout needs. 
+		We are gradually adding new functionality and we welcome your suggestions and feedback. 
+		Please feel free to send us any additional dummy texts.";*/
+		
+		HashMap<String,List<String>> tockenizedWords = new HashMap<>();
+		
 		HashMap<String,String> map = new HashMap<>();
+		
 		Iterator<Map.Entry<String, String>> entries = map.entrySet().iterator();
 		while(entries.hasNext()) {
 			Map.Entry<String, String> entry =  entries.next();
 			String key = entry.getKey();
-			 inputData = entry.getValue();
-
-			String output2 = "";
-
-			String output3 = "";
+			String inputData = entry.getValue();
+			String filteredWords = "";
+			String swearWords = "";
 			try {
-
-				output2 = ExudeData.getInstance().filterStoppings(inputData);
-				output3 = ExudeData.getInstance().getSwearWords(inputData);
+				filteredWords = ExudeData.getInstance().filterStoppings(inputData);
+				swearWords = ExudeData.getInstance().getSwearWords(inputData);
 			} catch (InvalidDataException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
-			System.out.println("output : " + output2);
-			System.out.println("output : " + output3);
-
-
-			String special = output2.replaceAll("[$_&+,:;=?@#|'<>.-^*()%!]", " ");
-
+			System.out.println("output : " + filteredWords);
+			System.out.println("output : " + swearWords);
+			String filteredSpecialChar = filteredWords.replaceAll("[$_&+,:;=?@#|'<>.-^*()%!]", " ");
 			List<String> result = new ArrayList<>();
-			for (String s1 : special.split(" ")) {
-				//System.out.println(s1);
+			for (String s1 : filteredSpecialChar.split(" ")) {
 				result.add(s1);
-
 				System.out.println(result);
 			}
-			resultMap.put(key,result);
+			tockenizedWords.put(key,result);
 		}
-		return resultMap;
-
+		return tockenizedWords;
 	}
-//	public static void main(String[] args) {
-//		System.out.println(getWordCheckerByWord());
-//	}
 }

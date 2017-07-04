@@ -10,5 +10,5 @@ import java.util.HashMap;
  */
 public interface KeywordScannerService {
 
-    public HashMap<String,String[]> scanDocument(Document document);
+    public HashMap<String, String> scanDocument(Document document);
 }

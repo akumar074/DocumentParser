@@ -1,7 +1,6 @@
 package com.stackroute.swisit.documentparser.service;
 
 import com.stackroute.swisit.documentparser.domain.Term;
-import com.stackroute.swisit.documentparser.repository.Neo4jParserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
