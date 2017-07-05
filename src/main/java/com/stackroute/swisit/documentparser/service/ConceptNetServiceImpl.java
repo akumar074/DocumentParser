@@ -19,15 +19,17 @@ public class ConceptNetServiceImpl implements ConceptNetService {
 
         HashMap<String,HashMap<String,Integer>> resultMap = new HashMap<>();
         List<Term> termsList = neo4jParserService.getTerms();
+        System.out.println("Inside create document model");
         for(Term term : termsList){
             HashMap<String, List<String>> map = new HashMap<String, List<String>>();
-            Iterator<Map.Entry<String, List<String>>> entries = map.entrySet().iterator();
+            Iterator<Map.Entry<String, List<String>>> entries = input.entrySet().iterator();
             HashMap<String,Integer> tagTextMap = new HashMap<>();
             while(entries.hasNext()) {
                 Map.Entry<String, List<String>> entry=entries.next();
                 String tag = entry.getKey();
+                System.out.println("My tag is ========"+tag);
                 List<String> textValue = entry.getValue();
-                tagTextMap = null;
+                //tagTextMap = null;
                 int count = Collections.frequency(textValue,term.getName());
                 tagTextMap.put(tag,count);
             }

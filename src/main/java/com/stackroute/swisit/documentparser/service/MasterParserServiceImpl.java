@@ -80,8 +80,18 @@ public class MasterParserServiceImpl implements MasterParserService {
         System.out.println(crawlerResult.getLink());
         document = Jsoup.parse(crawlerResult.getDocument());
 	        HashMap<String, String> keywordScannerResult = keywordScannerService.scanDocument(document);
-	        
+	        /*Iterator<HashMap.Entry<String,String>> ksritr = keywordScannerResult.entrySet().iterator();
+	        while(ksritr.hasNext()){
+	        	HashMap.Entry ksrent = ksritr.next();
+				System.out.println("ksrent.getKey() :   " + ksrent.getKey() + "      ksrent.getValue()  :  " + ksrent.getValue());
+			}*/
 	        HashMap<String, List<String>> wordCheckerResult = wordCheckerService.getWordCheckerByWord(keywordScannerResult);
+			/*System.out.println("Wordchecker result      "+wordCheckerResult.isEmpty());
+	        Iterator<HashMap.Entry<String,List<String>>> ksritr = wordCheckerResult.entrySet().iterator();
+			while(ksritr.hasNext()){
+				HashMap.Entry ksrent = ksritr.next();
+				System.out.println("wcent.getKey() :   " + ksrent.getKey() + "      wcent.getValue()  :  " + ksrent.getValue().toString());
+			}*/
 	        HashMap<String,HashMap<String,Integer>> conceptNetResult = conceptNetService.createDocumentModel(wordCheckerResult);
 	        Iterator<HashMap.Entry<String,HashMap<String,Integer>>> ita = conceptNetResult.entrySet().iterator() ;
 	        while(ita.hasNext()) {
