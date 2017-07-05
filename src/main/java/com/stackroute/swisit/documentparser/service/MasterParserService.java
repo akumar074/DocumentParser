@@ -1,4 +1,5 @@
 package com.stackroute.swisit.documentparser.service;
+import java.text.ParseException;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -11,5 +12,5 @@ import com.stackroute.swisit.documentparser.domain.DocumentParserResult;
  */
 public interface MasterParserService {
 
-    public Iterable<DocumentParserResult> parseDocument(CrawlerResult crawlerResults) throws JsonProcessingException;
+    public Iterable<DocumentParserResult> parseDocument(/*CrawlerResult crawlerResults*/) throws JsonProcessingException, ParseException;
 }

@@ -26,9 +26,9 @@ public class KafkaConsumerThread extends Thread {
 
 	public void run() {
 		Properties configProperties = new Properties();
-		configProperties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"localhost:9092");
+		configProperties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"172.23.239.165:9092");
 		configProperties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
-		configProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "com.stackroute.swisit.crawler.domain.SearcherResult");
+		configProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "com.stackroute.swisit.documentparser.serialization.CrawlerDeserializer");
 		configProperties.put("group.id", "group-1");
 
 		/*Figure out where to start processing messages from*/
@@ -44,7 +44,7 @@ public class KafkaConsumerThread extends Thread {
 				CrawlerResult crawlerResult = new CrawlerResult();
 				crawlerResult = record.value();
 				try {
-					masterScannerService.parseDocument(crawlerResult);
+					masterScannerService.parseDocument();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

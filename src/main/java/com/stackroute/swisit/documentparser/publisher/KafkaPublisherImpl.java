@@ -27,8 +27,8 @@ public class KafkaPublisherImpl implements Publisher {
 
 	/*------ Kafka broker id fetched from properties file------*/
 	
-	@Value("${broker-id}")
-	String brokerid;
+	//@Value("${broker-id}")
+	//String brokerid;
 
 	/*-------------------method to publish message via kafka-------------------*/
 	public void publishMessage(String topicName,DocumentParserResult message) throws JsonProcessingException{
@@ -36,7 +36,7 @@ public class KafkaPublisherImpl implements Publisher {
 		/* configure properties for kafka */
 		configProperties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
 		configProperties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,"org.apache.kafka.common.serialization.ByteArraySerializer");
-		configProperties.put("value.serializer","com.stackroute.swisit.crawler.serialization.CrawlerSerializer");
+		configProperties.put("value.serializer","com.stackroute.swisit.documentparser.serialization.CrawlerSerializer");
 		Producer<String, DocumentParserResult> producer = new KafkaProducer<String, DocumentParserResult>(configProperties);
 		logger.info("getting published");
 		ProducerRecord<String, DocumentParserResult> producerRecord = new ProducerRecord<String, DocumentParserResult>(topicName,message);

@@ -3,8 +3,10 @@ package com.stackroute.swisit.documentparser.service;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -13,12 +15,14 @@ import java.util.*;
 @Service
 public class KeywordScannerServiceImpl implements KeywordScannerService {
 
-    private ObjectMapperService objectMapperService;
+    @Autowired
+    ObjectMapperService objectMapperService;
 
     public HashMap<String, String> scanDocument(Document document){
 
         HashMap<String, String> resultMap = new HashMap<>();
-        List<LinkedHashMap<String,String>> titleList = objectMapperService.objectMapping("./src/main/resources/common/intensity.json");
+        List<LinkedHashMap<String,String>>  titleList = objectMapperService.objectMapping("./src/main/resources/common/intensity.json");
+
         List<String> tagList = new ArrayList<>();
         StringTokenizer stringTokenizer = null;
 
