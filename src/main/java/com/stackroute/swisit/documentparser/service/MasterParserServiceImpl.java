@@ -3,6 +3,8 @@ package com.stackroute.swisit.documentparser.service;
 /*------Importing Libraries-----*/
 import com.stackroute.swisit.documentparser.domain.CrawlerResult;
 import com.stackroute.swisit.documentparser.domain.DocumentParserResult;
+import com.stackroute.swisit.documentparser.publisher.Publisher;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.stackroute.swisit.documentparser.domain.ContentSchema;
 
 import org.jsoup.Jsoup;
@@ -22,7 +24,9 @@ public class MasterParserServiceImpl implements MasterParserService {
 
 	@Autowired
 	private KeywordScannerService keywordScannerService;
-
+	
+	@Autowired
+	private Publisher publisher;
     /*@Autowired
     public void setKeywordScannerService(KeywordScannerService keywordScannerService){
         this.keywordScannerService = keywordScannerService;
@@ -52,26 +56,27 @@ public class MasterParserServiceImpl implements MasterParserService {
     	this.wordCheckerService=wordCheckerService;
     }*/
     
-    public Iterable<DocumentParserResult> parseDocument(ArrayList<CrawlerResult> crawlerResults){
+    public Iterable<DocumentParserResult> parseDocument(CrawlerResult crawlerResults) throws JsonProcessingException{
     	
         Document document=null;
         ArrayList<DocumentParserResult> documentParserResults = new ArrayList<DocumentParserResult>();
-        for(CrawlerResult crawlerResult : crawlerResults) {
-            document = Jsoup.parse(crawlerResult.getDocument());
+        //for(CrawlerResult crawlerResult : crawlerResults) {
+            document = Jsoup.parse(crawlerResults.getDocument());
 	        HashMap<String, String> keywordScannerResult = keywordScannerService.scanDocument(document);
 	        HashMap<String, List<String>> wordCheckerResult = wordCheckerService.getWordCheckerByWord(keywordScannerResult);
 	        HashMap<String,HashMap<String,Integer>> conceptNetResult = conceptNetService.createDocumentModel(wordCheckerResult);
 	        ArrayList<ContentSchema> contentSchema = intensityAlgoService.calculateIntensity(conceptNetResult);
 	        DocumentParserResult documentParserResult = new DocumentParserResult();
-	        documentParserResult.setQuery(crawlerResult.getQuery());
-	        documentParserResult.setConcept(crawlerResult.getConcept());
-	        documentParserResult.setLink(crawlerResult.getLink());
+	        documentParserResult.setQuery(crawlerResults.getQuery());
+	        documentParserResult.setConcept(crawlerResults.getConcept());
+	        documentParserResult.setLink(crawlerResults.getLink());
 	        documentParserResult.setTerms(contentSchema);
-	        documentParserResult.setTitle(crawlerResult.getTitle());
-	        documentParserResult.setSnippet(crawlerResult.getSnippet());
-	        documentParserResult.setLastindexedof(crawlerResult.getLastindexedof());
+	        documentParserResult.setTitle(crawlerResults.getTitle());
+	        documentParserResult.setSnippet(crawlerResults.getSnippet());
+	        documentParserResult.setLastindexedof(crawlerResults.getLastindexedof());
+	        publisher.publishMessage("tointent", documentParserResult);
 	        documentParserResults.add(documentParserResult);
-        }
+        //}
         return documentParserResults;
     }
 }
