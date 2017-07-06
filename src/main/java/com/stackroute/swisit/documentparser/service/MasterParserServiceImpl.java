@@ -93,7 +93,7 @@ public class MasterParserServiceImpl implements MasterParserService {
 				System.out.println("wcent.getKey() :   " + ksrent.getKey() + "      wcent.getValue()  :  " + ksrent.getValue().toString());
 			}*/
 	        HashMap<String,HashMap<String,Integer>> conceptNetResult = conceptNetService.createDocumentModel(wordCheckerResult);
-	        Iterator<HashMap.Entry<String,HashMap<String,Integer>>> ita = conceptNetResult.entrySet().iterator() ;
+	        /*Iterator<HashMap.Entry<String,HashMap<String,Integer>>> ita = conceptNetResult.entrySet().iterator() ;
 	        while(ita.hasNext()) {
 				HashMap.Entry<String, HashMap<String, Integer>> parentPair = ita.next();
 				System.out.println("parentPair.getKey() :   " + parentPair.getKey() + " parentPair.getValue()  :  " + parentPair.getValue());
@@ -103,14 +103,18 @@ public class MasterParserServiceImpl implements MasterParserService {
 					System.out.println("childPair.getKey() :   " + childPair.getKey() + " childPair.getValue()  :  " + childPair.getValue());
 
 				}
-			}
-	        ArrayList<ContentSchema> contentSchema = intensityAlgoService.calculateIntensity(conceptNetResult);
-	        DocumentParserResult documentParserResult = new DocumentParserResult();
+			}*/
+
+			ArrayList<ContentSchema> contentSchema = intensityAlgoService.calculateIntensity(conceptNetResult);
+			DocumentParserResult documentParserResult = new DocumentParserResult();
 	        documentParserResult.setQuery(crawlerResult.getQuery());
 	        documentParserResult.setConcept(crawlerResult.getConcept());
 	        documentParserResult.setLink(crawlerResult.getLink());
+			documentParserResult.setTitle(crawlerResult.getTitle());
+			//System.out.println(documentParserResult.getTitle());
 	        documentParserResult.setTerms(contentSchema);
-	        documentParserResult.setTitle(crawlerResult.getTitle());
+	        //for(ContentSchema cs : documentParserResult.getTerms())
+	        	//System.out.println(cs.getWord()+"     "+cs.getIntensity());
 	        documentParserResult.setSnippet(crawlerResult.getSnippet());
 	        documentParserResult.setLastindexedof(crawlerResult.getLastindexedof());
 	        //publisher.publishMessage("tointent", documentParserResult);

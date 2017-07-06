@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fd76b66-a038-42cd-8923-b8891fa4d643" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/DocumentparserApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/DocumentparserApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/ContentSchema.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/ContentSchema.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/CrawlerResult.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/CrawlerResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/DocumentParserResult.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/DocumentParserResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/Term.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/domain/Term.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/repository/Neo4jParserRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/repository/Neo4jParserRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/ConceptNetService.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/ConceptNetService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/IntensityAlgoService.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/IntensityAlgoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/KeywordScannerService.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/KeywordScannerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/KeywordScannerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/KeywordScannerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/MasterParserService.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/MasterParserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/MasterParserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/MasterParserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/Neo4JParserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/Neo4JParserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/Neo4jParserService.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/Neo4jParserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/PhraseScannerService.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/PhraseScannerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/PhraseScannerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/PhraseScannerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/WordCheckerService.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/WordCheckerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/DocumentparserApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/DocumentparserApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/MasterParserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/MasterParserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/common/intensity.json" afterPath="$PROJECT_DIR$/target/classes/common/intensity.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/common/intensity.json" afterPath="$PROJECT_DIR$/src/main/resources/common/intensity.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/common/termintensity.json" afterPath="$PROJECT_DIR$/src/main/resources/common/termintensity.json" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +23,7 @@
       <file leaf-file-name="KeywordScannerServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/KeywordScannerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
+            <state relative-caret-position="-100">
               <caret line="23" column="108" lean-forward="true" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
               <folding />
             </state>
@@ -56,18 +35,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConceptNetServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConceptNetServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="257">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,10 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordCheckerServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.java">
+      <file leaf-file-name="intensity.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/common/intensity.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordCheckerServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-521">
               <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -87,11 +74,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PhraseScannerServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/PhraseScannerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="IntensityAlgoServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="116">
+              <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +99,8 @@
       <file leaf-file-name="DocumentparserApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/DocumentparserApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+            <state relative-caret-position="221">
+              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="44" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -112,38 +109,18 @@
       <file leaf-file-name="MasterParserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/MasterParserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="105" column="13" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="105" selection-end-column="13" />
+            <state relative-caret-position="159">
+              <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordCheckerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerService.java">
+      <file leaf-file-name="DocumentParserResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/domain/DocumentParserResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeywordScannerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/KeywordScannerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConceptNetService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="91" lean-forward="false" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
+            <state relative-caret-position="18">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -162,15 +139,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/PhraseScannerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/KeywordScannerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetService.java" />
         <option value="$PROJECT_DIR$/profiles.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/common/intensity.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/common/termintensity.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/MasterParserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/DocumentparserApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -237,6 +216,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documentparser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DocumentParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,7 +647,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.264574" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27653214" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -792,14 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/domain/DocumentParserResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/repository/Neo4jParserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -812,26 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/PhraseScannerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/Neo4JParserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -862,14 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/KeywordScannerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="23" column="108" lean-forward="true" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -878,46 +851,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/common/termintensity.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
+        <state relative-caret-position="18">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/common/intensity.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/domain/DocumentParserResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/DocumentparserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="44" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/DocumentparserApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/IntensityAlgoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        <state relative-caret-position="116">
+          <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/KeywordScannerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="23" column="108" lean-forward="true" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/MasterParserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="105" column="13" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="105" selection-end-column="13" />
+        <state relative-caret-position="159">
+          <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/Neo4JParserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/PhraseScannerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="38" column="54" lean-forward="false" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/WordCheckerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="-521">
           <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/swisit/documentparser/service/ConceptNetServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

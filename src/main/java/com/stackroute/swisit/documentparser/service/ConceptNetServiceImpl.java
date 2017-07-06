@@ -27,7 +27,7 @@ public class ConceptNetServiceImpl implements ConceptNetService {
             while(entries.hasNext()) {
                 Map.Entry<String, List<String>> entry=entries.next();
                 String tag = entry.getKey();
-                System.out.println("My tag is ========"+tag);
+                //System.out.println("My tag is ========"+tag);
                 List<String> textValue = entry.getValue();
                 //tagTextMap = null;
                 int count = Collections.frequency(textValue,term.getName());

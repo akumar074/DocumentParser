@@ -33,7 +33,7 @@ public class DocumentparserApplication {
 		//Iterable<DocumentParserResult> documentParserResults = null;
 		try {
 			Iterable<DocumentParserResult> documentParserResults = masterParserServiceImpl.parseDocument();
-			/*for(DocumentParserResult documentParserResult : documentParserResults){
+			for(DocumentParserResult documentParserResult : documentParserResults){
 				System.out.println(documentParserResult.getConcept());
 				System.out.println(documentParserResult.getLink());
 				System.out.println(documentParserResult.getQuery());
@@ -41,10 +41,10 @@ public class DocumentparserApplication {
 				System.out.println(documentParserResult.getSnippet());
 				System.out.println(documentParserResult.getTitle());
 				for(ContentSchema cs:documentParserResult.getTerms()){
-					System.out.println(cs.getWord()+"         "+cs.getIntensity());
+					System.out.println("term : "+cs.getWord()+"         intensity : "+cs.getIntensity());
 				}
 				System.out.println(documentParserResult.getTerms().get(0).toString());
-			}*/
+			}
 		}catch (Exception e){e.printStackTrace();}
 		//List<CrawlerResult> list =subscriberImpl.receiveMessage("tonewparser");
 		//CrawlerResult crawlerResult[] = new CrawlerResult[list.size()];
